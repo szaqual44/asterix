@@ -1,13 +1,13 @@
-import './App.css';
-import { Typography } from '@mui/material';
+import {Typography} from '@mui/material';
+import {MainHeader} from "./general/MainHeader";
 
 function App() {
-  return (
-    <>
-      <h1>Asterix</h1>
-      <Typography variant='h2'>GGGGGGGGGG</Typography>
-    </>
-  );
+    return (
+        <div >
+            <MainHeader/>
+            <Typography variant='h2'>GGGGGGGGGG</Typography>
+        </div>
+    );
 }
 
 export default App;
