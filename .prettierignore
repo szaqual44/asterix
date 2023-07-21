@@ -1,0 +1,9 @@
+**/assets/**
+*.feature
+*.sass
+*.scss
+/build
+/coverage
+/public
+/node_modules
+/.reports
