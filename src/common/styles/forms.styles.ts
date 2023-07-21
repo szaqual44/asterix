@@ -5,8 +5,9 @@ const headerHeight = '10rem'
 
 export const mainSideMargin = '3rem';
 
+
 export const Main = styled.main`
-  margin: 0 ${mainSideMargin} 2rem ${mainSideMargin};
+  margin: 0 ${mainSideMargin} 2rem ${mainSideMargin};  
 `;
 
 export const HeaderContainer = styled.header`
@@ -22,3 +23,10 @@ export const HeaderContainer = styled.header`
     align-items:center;
     justify-content:center;
 `
+
+export const ContainerWithShadow = styled.div`
+  background-color: ${Colors.white};
+  margin: 4rem 0;
+  padding: 2rem 5rem;
+  box-shadow: 0 0 1.6rem 0.6rem ${Colors.shadow};
+`;

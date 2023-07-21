@@ -19,13 +19,6 @@ export const MainHeader = () => {
                         {link}
                     </NavLink>))}
             </ul>
-
         </HeaderContainer>
-
-        <Main>
-
-
-            <Button variant="contained">Contained</Button>
-        </Main>
     </>
 }

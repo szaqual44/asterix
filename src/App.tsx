@@ -1,11 +1,15 @@
-import {Typography} from '@mui/material';
+import {Button, Typography} from '@mui/material';
 import {MainHeader} from "./general/MainHeader";
+import {Main} from "./common/styles/forms.styles";
+import {About} from "./pages/About";
 
 function App() {
     return (
-        <div >
+        <div>
             <MainHeader/>
-            <Typography variant='h2'>GGGGGGGGGG</Typography>
+            <Main>
+                <About/>
+            </Main>
         </div>
     );
 }

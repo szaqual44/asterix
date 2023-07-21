@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 body{    
     box-sizing:border-box;
     background-color:${Colors.lightGrey};
+    margin:0;
 }
 
 div{
