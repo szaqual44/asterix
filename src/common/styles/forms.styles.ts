@@ -17,11 +17,12 @@ export const HeaderContainer = styled.header`
     height: ${headerHeight};
     background-color:${Colors.white};
     z-index:100;
-    width:100vw;
     box-sizing:border-box;
     display:flex;
     align-items:center;
     justify-content:center;
+    //TODO: change
+    width:99vw
 `
 
 export const ContainerWithShadow = styled.div`
@@ -29,4 +30,25 @@ export const ContainerWithShadow = styled.div`
   margin: 4rem 0;
   padding: 2rem 5rem;
   box-shadow: 0 0 1.6rem 0.6rem ${Colors.shadow};
+  
 `;
+
+export const Block = styled.div`
+    display:flex;  
+    width:100%;
+    margin:2rem 0;
+`
+
+export const ImgContainer = styled.div`
+    width:100%;
+`
+export const TextContainer = styled.div`
+    width:100%;
+    color:red;
+    padding: 0 3rem;
+    text-align: justify;
+`
+
+export const Img = styled.img`
+    width:100%;
+`

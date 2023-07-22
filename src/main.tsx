@@ -5,13 +5,15 @@ import './index.css';
 import {globalTheme} from './common/styles/theme/globalTheme.styles';
 import {ThemeProvider} from '@mui/material/styles';
 import {GlobalStyles} from "./common/styles/global.styles";
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <GlobalStyles/>
         <ThemeProvider theme={globalTheme}>
-            <App/>
-
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
         </ThemeProvider>
     </React.StrictMode>,
 );

@@ -7,6 +7,10 @@ export const globalTheme = createTheme({
             fontFamily: ['Rubik', 'sans-serif'].join(','),
             fontSize: 20,
         },
+        p :{
+            fontSize: 20,
+        },
+
     },
     components: {
         // Name of the component
