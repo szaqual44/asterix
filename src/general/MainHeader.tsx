@@ -1,33 +1,48 @@
 import {HeaderContainer, Main} from "../common/styles/forms.styles";
 import {NavLink} from "../common/styles/typography.style";
 import {Routes} from "../common/RoutesEnum";
+import {Colors} from "../common/styles/variables.styles";
+
 
 export const MainHeader = () => {
 
-    const navLinks = [{title: "Home", path: Routes.HOME},
-        {
-            title: "Company",
-            path: Routes.COMPANY
-        },
+
+    const navLinks = [
         {
             title: "About",
-            path: Routes.ABOUT
+            path: '/'
+        },
+        {
+            title: "Why us?",
+            path: Routes.WHYUS
         },
         {
             title: "Contact",
             path: Routes.CONTACT
         }]
 
+    const navLinkClass = {
+        color: Colors.navLink,
+        "&:hover": {
+            color: Colors.navLinkHoover,
+            textDecoration:'none',
+
+        }
+    }
+
 
     return <>
         <HeaderContainer>
             <ul>
                 {navLinks.map((link, i) => (
-                    <NavLink  href={link.path}
+                    <NavLink href={link.path}
                              key={i}
                              color={"inherit"}
                              underline={"hover"}
-                             variant={'h3'}>
+                             variant={'h3'}
+                             sx={navLinkClass}
+
+                    >
                         {link.title}
                     </NavLink>))}
             </ul>
