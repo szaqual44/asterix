@@ -35,7 +35,7 @@ export const MainHeader = () => {
         <HeaderContainer>
             <ul>
                 {navLinks.map((link, i) => (
-                    <NavLink href={link.path}
+                    <NavLink href={'/'}
                              key={i}
                              color={"inherit"}
                              underline={"hover"}
