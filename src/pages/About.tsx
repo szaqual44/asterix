@@ -9,7 +9,7 @@ export const About = () => {
         <F.Bar/>
         <F.Section>
             <F.Block>
-                <F.Img src={'src/common/images/1.jpg'}/>
+                <F.Img src={'public/assets/img/1.jpg'}/>
             </F.Block>
             <F.Block>
                 <F.TextContainer>
