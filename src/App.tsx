@@ -1,16 +1,24 @@
-import {Button, Typography} from '@mui/material';
 import {MainHeader} from "./general/MainHeader";
-import {Main} from "./common/styles/forms.styles";
+import {Main, MainContainer, Overlay} from "./common/styles/forms.styles";
+import {Home} from "./pages/Home";
 import {About} from "./pages/About";
+import {CarouselComponent} from "./general/Carousel";
+
+
 
 function App() {
+
     return (
-        <div>
+        <MainContainer>
+            <Overlay>
             <MainHeader/>
-            <Main>
+            <Main >
+                <Home/>
                 <About/>
+                <CarouselComponent/>
             </Main>
-        </div>
+            </Overlay>
+        </MainContainer     >
     );
 }
 

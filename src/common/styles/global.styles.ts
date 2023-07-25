@@ -9,7 +9,12 @@ export const GlobalStyles = createGlobalStyle`
 
 body{    
     box-sizing:border-box;
-    background-color:${Colors.lightGrey};
+    background-color:${Colors.bodyBG};
+    margin:0;
+}
+
+
+ul {
     margin:0;
 }
 
