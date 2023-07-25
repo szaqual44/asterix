@@ -13,7 +13,7 @@ export const Home = () => {
                 </div>
             </F.FirstBlock>
             <F.Block>
-                <F.Img src={'./src/common/images/1.jpg'}/>
+                <F.Img src={'/assets/img/2.jpg'}/>
             </F.Block>
         </F.Section>
     </>
