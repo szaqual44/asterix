@@ -11,9 +11,8 @@ export const CarouselComponent = () => {
 
     const imgPath=`src/common/images/carousel/`
     const imgList = [1,2,3,4,5,6]
-
-
     return <>
+
         <Carousel activeIndex={index} onSelect={handleSelect} >
             {imgList.map(img=>(
                 <Carousel.Item key={img} interval={1000}>

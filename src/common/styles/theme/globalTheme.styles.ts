@@ -13,7 +13,12 @@ export const globalTheme = createTheme({
         },
         h2: {
             fontFamily: ['Rubik', 'sans-serif'].join(','),
-            fontSize: 20,
+            fontSize: 40,
+            fontWeight:'bold'
+        },
+        h3: {
+            fontFamily: ['Rubik', 'sans-serif'].join(','),
+            fontSize: 30,
         },
         p :{
             fontSize: 20,

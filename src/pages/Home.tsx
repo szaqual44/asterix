@@ -1,13 +1,21 @@
 import {Typography} from "@mui/material";
 import * as F from '../common/styles/forms.styles'
-import {CarouselComponent} from "../general/Carousel";
+import {Text} from "../common/text/Text";
+
 
 export const Home = () => {
-
+    const height = '500px';
     return <>
-        <F.ContainerWithShadow>
-            <Typography variant={"h1"}>Home</Typography>
-            <CarouselComponent/>
-        </F.ContainerWithShadow>
+        <F.Section height={height}>
+            <F.FirstBlock>
+                <div style={{width: '60%', textAlign: 'center'}}>
+                    <Typography variant={"h2"}>{Text.getText(1)}</Typography>
+                </div>
+            </F.FirstBlock>
+            <F.Block>
+                <F.Img src={'./src/common/images/1.jpg'}/>
+            </F.Block>
+        </F.Section>
     </>
 }
+

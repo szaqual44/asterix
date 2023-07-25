@@ -46,6 +46,7 @@ export const MainHeader = () => {
                         {link.title}
                     </NavLink>))}
             </ul>
+         ))}
         </HeaderContainer>
     </>
 }

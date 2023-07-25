@@ -1,24 +1,24 @@
 import {MainHeader} from "./general/MainHeader";
-import {Main} from "./common/styles/forms.styles";
+import {Main, MainContainer, Overlay} from "./common/styles/forms.styles";
+import {Home} from "./pages/Home";
 import {About} from "./pages/About";
-import {Routes as RoutesGroup, Route} from "react-router-dom";
-import {Contact} from "./pages/Contact";
-import {Whyus} from "./pages/Company";
-import {Routes} from "./common/RoutesEnum";
+import {CarouselComponent} from "./general/Carousel";
+
+
 
 function App() {
 
     return (
-        <div >
+        <MainContainer>
+            <Overlay>
             <MainHeader/>
             <Main >
-                <RoutesGroup>
-                    <Route path='/' element={<About/>}/>
-                    <Route path={`/${Routes.WHYUS}`} element={<Whyus/>}/>
-                    <Route path={`/${Routes.CONTACT}`} element={<Contact/>}/>
-                </RoutesGroup>
+                <Home/>
+                <About/>
+                <CarouselComponent/>
             </Main>
-        </div>
+            </Overlay>
+        </MainContainer     >
     );
 }
 

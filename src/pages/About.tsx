@@ -1,23 +1,23 @@
-import {Typography} from "@mui/material";
-import * as F from '../common/styles/forms.styles'
 import {Text} from "../common/text/Text";
+import * as F from '../common/styles/forms.styles'
+import {Typography} from "@mui/material";
+
 
 export const About = () => {
-
+const height="500px";
     return <>
-        <F.ContainerWithShadow>
+        <F.Bar/>
+        <F.Section height={height}>
             <F.Block>
-                <F.TextContainer slidein={"left"} id={1}>
-                    <Typography variant={"h1"}>About</Typography>
-                    <div style={{width:'60%'}}>
-                        <Typography variant={"p"}>{Text.getText(1)}</Typography>
-                    </div>
-                </F.TextContainer>
-                <F.ImgContainer slidein={"right"} id={2}>
-                    <F.Img src={'./src/common/images/2.jpg'}/>
-                </F.ImgContainer>
+                <F.Img src={'./src/common/images/2.jpg'}/>
             </F.Block>
+            <F.Block>
+                <F.TextContainer>
+                    <Typography variant={"h1"}>About</Typography>
+                    <Typography variant={"h3"}>{Text.getText(2)}</Typography>
+                </F.TextContainer>
 
-        </F.ContainerWithShadow>
+            </F.Block>
+        </F.Section>
     </>
 }

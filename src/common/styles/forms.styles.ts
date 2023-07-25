@@ -21,10 +21,23 @@ export const defaultSlidein = css<SlideinStyle>`
 `;
 
 
+export const MainContainer=styled.div`
+    height:100vh;    
+    background:url(/src/common/styles/bgPattern.jpg);  
 
+`
+export const Overlay=styled.div`
+   // position:absolute;
+   // top:0;
+   // left:0;
+   // width:100%;
+   // height:100%;
+
+   background: ${Colors.bodyBGRBA};
+`
 
 export const Main = styled.main`
-  margin: 0 ${mainSideMargin} 2rem ${mainSideMargin};  
+
 `;
 
 export const HeaderContainer = styled.header`
@@ -39,22 +52,44 @@ export const HeaderContainer = styled.header`
     align-items:center;
     justify-content:center;
     //TODO: change
-    width:99vw;
-    border-bottom:2px solid ${Colors.navLink}
+    width:100vw;
+    border-bottom:2px solid ${Colors.navLink};
 `
 
-export const ContainerWithShadow = styled.div`
-  // background-color: ${Colors.white};
-  margin: 4rem 0;
-  padding: 2rem 5rem;
-  // box-shadow: 0 0 1.6rem 0.6rem ${Colors.shadow};
-  
+export const ContainerWithShadow = styled.div`  
+  margin:  0;
+  padding: 0; 
 `;
+
+export const Section = styled.div`
+    display:flex;  
+    width:100%;
+
+    height: ${h=>h.height}
+`
+
+export const FirstBlock = styled.div`
+    width:100%;
+    display:flex;      
+    justify-content: center;
+    align-items: center;
+
+`
 
 export const Block = styled.div`
     display:flex;  
-    width:100%;
-    margin:2rem 0;
+    width:100%;  
+   
+    ${(props)=>{
+        if (props.direction==='column') return `
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:10rem 0;
+    padding:0 5rem;
+    `
+}}  
 `
 
 export const ImgContainer = styled.div`
@@ -64,16 +99,25 @@ export const ImgContainer = styled.div`
 `
 export const TextContainer = styled.div`
     width:100%;
-    color:red;
-    padding: 0 3rem;
-    text-align: justify;    
-       
-    ${defaultSlidein}
-}
-    
+    height:100%;
+    padding: 0 5rem; 
+    margin:5rem 0 ;
+    text-align: justify;           
+    ${defaultSlidein}    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}    
 `
 
 export const Img = styled.img`
     width:100%;
-        max-height:50rem;
+    object-fit:cover;    
+`
+
+export const Bar = styled.div`
+    width:100%;
+    height:150px;
+    background:${Colors.separationBar1};
 `

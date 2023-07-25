@@ -6,6 +6,9 @@ export const Colors = {
 
     navBG:'#27374D',
     bodyBG:'#526D82',
+    bodyBGRBA:'rgba(255,255,255,0.8)',
+
+    separationBar1:`#1DA1F1`,
 
     navLink: '#9DB2BF',
     navLinkHoover: '#DDE6ED',
