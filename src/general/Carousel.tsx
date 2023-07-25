@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import {useState} from "react";
 import * as I from '../common/styles/images.styles'
-import * as F from "../common/styles/forms.styles";
+
 
 export const CarouselComponent = () => {
     const [index, setIndex] = useState<number>(0 as number);
