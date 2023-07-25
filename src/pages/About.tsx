@@ -4,10 +4,10 @@ import {Typography} from "@mui/material";
 
 
 export const About = () => {
-const height="500px";
+
     return <>
         <F.Bar/>
-        <F.Section height={height}>
+        <F.Section>
             <F.Block>
                 <F.Img src={'./src/common/images/2.jpg'}/>
             </F.Block>

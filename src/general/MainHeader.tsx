@@ -1,4 +1,4 @@
-import {HeaderContainer, Main} from "../common/styles/forms.styles";
+import {HeaderContainer} from "../common/styles/forms.styles";
 import {NavLink} from "../common/styles/typography.style";
 import {Routes} from "../common/RoutesEnum";
 import {Colors} from "../common/styles/variables.styles";
@@ -46,7 +46,7 @@ export const MainHeader = () => {
                         {link.title}
                     </NavLink>))}
             </ul>
-         ))}
+
         </HeaderContainer>
     </>
 }

@@ -10,7 +10,7 @@ export class TextContent {
 
     public getText(txtNumber?: number) {
         if (txtNumber) {
-            let txt = this.text.get(txtNumber) || ''
+            const txt = this.text.get(txtNumber) || ''
             //TODO loop for replacing arg
             return txt
         }

@@ -1,24 +1,20 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import {Colors} from "./variables.styles";
-import {SlideinStyle} from "./styles.interface";
 
 const headerHeight = '10rem'
 
 export const mainSideMargin = '3rem';
 
+// animation:slidein${p=>p.slidein+String(p.id)} 2s forwards;
+// @keyframes slidein${p=>p.slidein+String(p.id)} {
+//     100% {
+//     ${({slidein}) => {
+//         if (slidein === 'left') return "transform: translateX(20%);"
+//         if (slidein === 'right') return "transform: translateX(-10%);"
+//         return ''
+//     }
+// }
 
-
-export const defaultSlidein = css<SlideinStyle>`
- animation:slidein${p=>p.slidein+p.id} 2s forwards; 
- @keyframes slidein${p=>p.slidein+p.id} {
-        100% {         
-        ${({slidein}) => {
-    if (slidein === 'left') return "transform: translateX(20%);"
-    if (slidein === 'right') return "transform: translateX(-10%);"
-    return ''
- }
-} 
-`;
 
 
 export const MainContainer=styled.div`
@@ -65,8 +61,11 @@ export const Section = styled.div`
     display:flex;  
     width:100%;
 
-    height: ${h=>h.height}
 `
+// height: ${({height})=> {
+// if (height) return height
+// else return '0'
+// }}
 
 export const FirstBlock = styled.div`
     width:100%;
@@ -78,24 +77,22 @@ export const FirstBlock = styled.div`
 
 export const Block = styled.div`
     display:flex;  
-    width:100%;  
-   
-    ${(props)=>{
-        if (props.direction==='column') return `
-        display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin:10rem 0;
-    padding:0 5rem;
-    `
-}}  
+    width:100%; 
 `
+// ${(props)=>{
+//     if (props.direction==='column') return `
+//     display: flex;
+// flex-direction: column;
+// justify-content: space-between;
+// align-items: center;
+// margin:10rem 0;
+// padding:0 5rem;
+// `
+// }}
 
 export const ImgContainer = styled.div`
     width:100%;
     height:100%;
-    ${defaultSlidein}
 `
 export const TextContainer = styled.div`
     width:100%;
@@ -103,7 +100,7 @@ export const TextContainer = styled.div`
     padding: 0 5rem; 
     margin:5rem 0 ;
     text-align: justify;           
-    ${defaultSlidein}    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
