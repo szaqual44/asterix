@@ -19,9 +19,10 @@ export const mainSideMargin = '3rem';
 
 export const MainContainer=styled.div`
     height:100vh;    
-    background:url(/src/common/styles/bgPattern.jpg);  
+     
 
 `
+// background:url(/src/common/styles/bgPattern.jpg);
 export const Overlay=styled.div`
    // position:absolute;
    // top:0;
