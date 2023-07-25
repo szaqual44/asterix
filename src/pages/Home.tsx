@@ -4,9 +4,9 @@ import {Text} from "../common/text/Text";
 
 
 export const Home = () => {
-    const height = '500px';
+
     return <>
-        <F.Section height={height}>
+        <F.Section >
             <F.FirstBlock>
                 <div style={{width: '60%', textAlign: 'center'}}>
                     <Typography variant={"h2"}>{Text.getText(1)}</Typography>

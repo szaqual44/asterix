@@ -3,9 +3,9 @@ import {useState} from "react";
 import * as I from '../common/styles/images.styles'
 
 export const CarouselComponent = () => {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState<number>(0 as number);
 
-    const handleSelect = (selectedIndex) => {
+    const handleSelect = (selectedIndex:number) => {
         setIndex(selectedIndex);
     };
 
