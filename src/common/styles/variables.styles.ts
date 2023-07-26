@@ -11,6 +11,9 @@ export const Colors = {
   footerBG: '#000000',
   footerText: '#ffffff',
 
+  aboutBG: '#fcf1d9',
+  aboutText:'#000000',
+
   separationBar1: `#1DA1F1`,
 
   navLink: '#9DB2BF',

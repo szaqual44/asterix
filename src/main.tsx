@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <GlobalStyles />
     <ThemeProvider theme={globalTheme}>
       <BrowserRouter>
+
         <App />
       </BrowserRouter>
     </ThemeProvider>

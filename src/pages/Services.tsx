@@ -32,13 +32,13 @@ export const Services = () => {
       <F.Section direction={'column'} id={'services'}>
         <F.ServicesBlock>
           <div style={{ width: '100%', textAlign: 'center' }}>
-            <Typography variant={'h1'}>Services</Typography>
+            <Typography  variant={'h1'}>Services</Typography>
           </div>
         </F.ServicesBlock>
 
         <Grid container spacing={5}>
           {puzzle.map((p) => (
-            <Grid item xs={6} key={p.icon}>
+            <Grid item  md={6} sm={12} key={p.icon}>
               <F.ElementContainer>
                 <F.Svg src={p.icon} />
                 <F.PuzzelContainer>

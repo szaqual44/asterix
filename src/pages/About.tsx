@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 
 export const About = () => {
   return (
-    <>
+    <F.AboutStyling>
       <F.Bar />
       <F.Section id={'about'}>
         <F.Block>
@@ -13,10 +13,14 @@ export const About = () => {
         <F.Block>
           <F.TextContainer>
             <Typography variant={'h1'}>About</Typography>
-            <Typography variant={'h3'}>{Text.getText(2)}</Typography>
+            <Typography
+                variant={'h3'}
+                align={'center'}
+
+            >{Text.getText(2)}</Typography>
           </F.TextContainer>
         </F.Block>
       </F.Section>
-    </>
+    </F.AboutStyling>
   );
 };

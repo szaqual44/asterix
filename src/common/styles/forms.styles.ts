@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Colors } from './variables.styles';
 
-const headerHeight = '10rem';
+const headerHeight = '15rem';
 
 export const mainSideMargin = '3rem';
 
@@ -42,10 +42,8 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
-  //TODO: change
-  width: 100vw;
-  border-bottom: 2px solid ${Colors.navLink};
+  padding: 2rem 10rem;
+  border-bottom: 4px solid ${Colors.navLink};
 `;
 
 interface SectionStyle {
@@ -88,8 +86,7 @@ export const CarouselContainer = styled.div`
 export const TextContainer = styled.div`
     width:100%;
     height:100%;
-    padding: 0 5rem; 
-    margin:5rem 0 ;
+    padding: 15rem 5rem;    
     text-align: justify;           
     display: flex;
     flex-direction: column;
@@ -137,4 +134,9 @@ export const ServicesBlock = styled.div`
 export const FooterStyling = styled.div`
   background-color: ${Colors.footerBG};
   color: ${Colors.footerText};
+`;
+
+export const AboutStyling = styled.div`
+  background-color: ${Colors.aboutBG};
+  color: ${Colors.aboutText};
 `;
