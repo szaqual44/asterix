@@ -109,7 +109,7 @@ export const Img = styled.img`
 `;
 export const Svg = styled.img`
   object-fit: cover;
-  height: 150px;
+  height: 100px;
 `;
 
 export const PuzzelContainer = styled.div`
