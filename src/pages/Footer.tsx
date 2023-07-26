@@ -6,7 +6,7 @@ export const Footer = () => {
 
 
     return <F.FooterStyling>
-        <F.Section direction={'column'}>
+        <F.Section direction={'column'} id={'contact'}>
             <F.ServicesBlock>
                 <div style={{width: '100%', textAlign: 'center'}}>
                     <Typography sx={{mt: 10,color:Colors.footerText}} variant={"h1"}>Contact us</Typography>

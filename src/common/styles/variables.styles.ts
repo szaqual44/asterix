@@ -4,7 +4,7 @@ export const Colors = {
     white: '#ffffff',
     black: '#000000',
 
-    navBG:'#27374D',
+    navBG:'#000000',
     bodyBG:'#526D82',
     bodyBGRBA:'rgba(255,255,255,0.8)',
 

@@ -7,7 +7,7 @@ export const About = () => {
 
     return <>
         <F.Bar/>
-        <F.Section>
+        <F.Section id={'about'}>
             <F.Block>
                 <F.Img src={'/assets/img/2.jpg'}/>
             </F.Block>

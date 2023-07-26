@@ -47,7 +47,8 @@ export const HeaderContainer = styled.header`
     box-sizing:border-box;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
+    padding:0 100px;
     //TODO: change
     width:100vw;
     border-bottom:2px solid ${Colors.navLink};
@@ -88,7 +89,8 @@ export const Block = styled.div`
     width:100%; 
 `
 export const CarouselContainer = styled.div`
-  margin: 10rem 0;
+  margin: 12rem 0;
+  padding:5rem;
    background: ${Colors.white};
 `
 export const TextContainer = styled.div`
@@ -109,7 +111,10 @@ export const ElementContainer = styled.div`
     display:flex;
     align-items: center;
 `
+export const Logo = styled.img`
 
+    height:100%;
+`
 export const Img = styled.img`
     width:100%;
     object-fit:cover;    

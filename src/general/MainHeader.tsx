@@ -1,7 +1,8 @@
-import {HeaderContainer} from "../common/styles/forms.styles";
+import {HeaderContainer, Logo} from "../common/styles/forms.styles";
 import {NavLink} from "../common/styles/typography.style";
 import {Routes} from "../common/RoutesEnum";
 import {Colors} from "../common/styles/variables.styles";
+import * as F from "../common/styles/forms.styles";
 
 
 export const MainHeader = () => {
@@ -10,19 +11,23 @@ export const MainHeader = () => {
     const navLinks = [
         {
             title: "Home",
-            path: '/'
+            path: '/',
+            id:'home'
         },
         {
             title: "About",
-            path: '/'
+            path: '/',
+            id:'about'
         },
         {
             title: "Services",
-            path: Routes.WHYUS
+            path: Routes.WHYUS,
+            id:'services'
         },
         {
             title: "Contact",
-            path: Routes.CONTACT
+            path: Routes.CONTACT,
+            id:'contact'
         }]
 
     const navLinkClass = {
@@ -37,15 +42,15 @@ export const MainHeader = () => {
 
     return <>
         <HeaderContainer>
+            <F.Logo src={'/assets/logo.jpg'}/>
             <ul>
                 {navLinks.map((link, i) => (
-                    <NavLink href={'/'}
+                    <NavLink href={`#${link.id}`}
                              key={i}
                              color={"inherit"}
                              underline={"hover"}
                              variant={'h3'}
                              sx={navLinkClass}
-
                     >
                         {link.title}
                     </NavLink>))}
