@@ -53,47 +53,43 @@ export const HeaderContainer = styled.header`
     border-bottom:2px solid ${Colors.navLink};
 `
 
-export const ContainerWithShadow = styled.div`  
-  margin:  0;
-  padding: 0; 
-`;
+interface SectionStyle {
+    direction?:string;
+}
 
-export const Section = styled.div`
+
+export const Section = styled.div<SectionStyle>`
     display:flex;  
     width:100%;
-
+    ${(props)=>{
+        if (props.direction==='column') 
+            return `
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin:10rem 0;
+                padding:0 5rem;
+            `
+        else return ''
+    }}   
 `
-// height: ${({height})=> {
-// if (height) return height
-// else return '0'
-// }}
+
 
 export const FirstBlock = styled.div`
     width:100%;
     display:flex;      
     justify-content: center;
     align-items: center;
-
 `
 
 export const Block = styled.div`
     display:flex;  
     width:100%; 
 `
-// ${(props)=>{
-//     if (props.direction==='column') return `
-//     display: flex;
-// flex-direction: column;
-// justify-content: space-between;
-// align-items: center;
-// margin:10rem 0;
-// padding:0 5rem;
-// `
-// }}
-
-export const ImgContainer = styled.div`
-    width:100%;
-    height:100%;
+export const CarouselContainer = styled.div`
+  margin: 10rem 0;
+   background: ${Colors.white};
 `
 export const TextContainer = styled.div`
     width:100%;
@@ -101,21 +97,48 @@ export const TextContainer = styled.div`
     padding: 0 5rem; 
     margin:5rem 0 ;
     text-align: justify;           
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }    
 `
+export const ElementContainer = styled.div`
+    width:100%;
+    height:200px;
+    display:flex;
+    align-items: center;
+`
 
 export const Img = styled.img`
     width:100%;
     object-fit:cover;    
+`
+export const Svg = styled.img`
+    object-fit:cover;  
+    height:150px;  
+`
+
+export const PuzzelContainer = styled.div`
+     display:flex;
+     flex-direction:column;
+     padding: 0 5rem; 
+     margin:5rem 0 ;
 `
 
 export const Bar = styled.div`
     width:100%;
     height:150px;
     background:${Colors.separationBar1};
+`
+export const ServicesBlock = styled.div`
+    width:100%;
+    display:flex;      
+    justify-content: start;
+    align-items: center;
+`
+
+export const FooterStyling = styled.div`
+   background-color:${Colors.footerBG};
+   color:${Colors.footerText};
 `

@@ -8,6 +8,9 @@ export const Colors = {
     bodyBG:'#526D82',
     bodyBGRBA:'rgba(255,255,255,0.8)',
 
+    footerBG:'#000000',
+    footerText:'#ffffff',
+
     separationBar1:`#1DA1F1`,
 
     navLink: '#9DB2BF',

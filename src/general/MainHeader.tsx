@@ -9,11 +9,15 @@ export const MainHeader = () => {
 
     const navLinks = [
         {
+            title: "Home",
+            path: '/'
+        },
+        {
             title: "About",
             path: '/'
         },
         {
-            title: "Why us?",
+            title: "Services",
             path: Routes.WHYUS
         },
         {
