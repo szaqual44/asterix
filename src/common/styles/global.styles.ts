@@ -1,6 +1,5 @@
-import {createGlobalStyle} from "styled-components";
-import {Colors, REM_TO_PX_RATIO} from "./variables.styles";
-
+import { createGlobalStyle } from 'styled-components';
+import { Colors, REM_TO_PX_RATIO } from './variables.styles';
 
 export const GlobalStyles = createGlobalStyle`
 :root {
@@ -22,4 +21,4 @@ div{
     box-sizing:border-box;
 }
 
-`
+`;
