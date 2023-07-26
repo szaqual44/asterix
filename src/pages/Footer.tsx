@@ -5,7 +5,7 @@ import {Colors} from '../common/styles/variables.styles';
 export const Footer = () => {
     return (
         <F.FooterStyling>
-            <F.Section direction={'column'} id={'contact'}>
+            <F.Section dir={'column'} id={'contact'}>
                 <F.ServicesBlock>
                     <div style={{width: '100%', textAlign: 'center'}}>
                         <Typography sx={{mt: 10, color: Colors.footerText}} variant={'h1'}>

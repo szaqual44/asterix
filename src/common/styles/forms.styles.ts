@@ -3,17 +3,21 @@ import { Colors } from './variables.styles';
 
 const headerHeight = '15rem';
 
-export const mainSideMargin = '3rem';
+export const Anim = styled.div`
+  animation:slidein${(p)=>(`${p.dir}${p.id}`)} 2s forwards;
+  width:100%;
+  height:100%;
 
-// animation:slidein${p=>p.slidein+String(p.id)} 2s forwards;
-// @keyframes slidein${p=>p.slidein+String(p.id)} {
-//     100% {
-//     ${({slidein}) => {
-//         if (slidein === 'left') return "transform: translateX(20%);"
-//         if (slidein === 'right') return "transform: translateX(-10%);"
-//         return ''
-//     }
-// }
+  @keyframes slidein${(p)=>(`${p.dir}${p.id}`)} {
+      0% {
+        transform: translateX(200%);
+       }
+      100% {
+        ${(p)=>{
+          if (p.dir==='right') return "transform: translateX(0);"
+          }      
+       }
+`;
 
 export const MainContainer = styled.div`
   height: 100vh;
@@ -25,11 +29,8 @@ export const Overlay = styled.div`
   // left:0;
   // width:100%;
   // height:100%;
-
   background: ${Colors.bodyBGRBA};
 `;
-
-export const Main = styled.main``;
 
 export const HeaderContainer = styled.header`
   position: sticky;
@@ -54,7 +55,7 @@ export const Section = styled.div<SectionStyle>`
   display: flex;
   width: 100%;
   ${(props) => {
-    if (props.direction === 'column')
+    if (props.dir === 'column')
       return `
                 display: flex;
                 flex-direction: column;

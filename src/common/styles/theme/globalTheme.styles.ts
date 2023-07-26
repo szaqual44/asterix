@@ -16,7 +16,7 @@ export const globalTheme = createTheme({
     h2: {
       fontSize: 40,
       fontWeight: 'bold',
-
+      lineHeight: '200%',
     },
     h3: {
       fontSize: 30,

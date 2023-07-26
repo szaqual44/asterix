@@ -16,7 +16,6 @@ export const About = () => {
             <Typography
                 variant={'h3'}
                 align={'center'}
-
             >{Text.getText(2)}</Typography>
           </F.TextContainer>
         </F.Block>

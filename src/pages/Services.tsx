@@ -29,7 +29,7 @@ export const Services = () => {
 
   return (
     <>
-      <F.Section direction={'column'} id={'services'}>
+      <F.Section dir={'column'} id={'services'}>
         <F.ServicesBlock>
           <div style={{ width: '100%', textAlign: 'center' }}>
             <Typography  variant={'h1'}>Services</Typography>
