@@ -4,8 +4,7 @@ import {Row, Cell} from "../common/styles/prettier.styles";
 
 
 export const Prettier = () => {
-    return (<F.Section>
-
+    return (
         <P.PrettierContainer>
             <Row>
                 <Cell size={6}/>
@@ -18,7 +17,7 @@ export const Prettier = () => {
             <Row>
                 <Cell size={6}/>
                 <Cell size={8}/>
-                <Cell size={4} />
+                <Cell size={4}/>
                 <Cell size={14} color={'blue'}/>
                 <Cell size={6}/>
                 <Cell size={4}/>
@@ -48,7 +47,7 @@ export const Prettier = () => {
                 <Cell size={5}/>
                 <Cell size={2}/>
                 <Cell size={6} color={'blue'}/>
-                <Cell size={4} />
+                <Cell size={4}/>
                 <Cell size={5} color={'coral'}/>
                 <Cell size={4}/>
                 <Cell size={6}/>
@@ -58,7 +57,7 @@ export const Prettier = () => {
                 <Cell size={4}/>
                 <Cell size={2}/>
                 <Cell size={6} color={'red'}/>
-                <Cell size={4} />
+                <Cell size={4}/>
                 <Cell size={4} color={'green'}/>
                 <Cell size={3}/>
                 <Cell size={2}/>
@@ -93,8 +92,8 @@ export const Prettier = () => {
             <Row>
                 <Cell size={3}/>
                 <Cell size={8}/>
-                <Cell size={5} />
-                <Cell size={2} />
+                <Cell size={5}/>
+                <Cell size={2}/>
                 <Cell size={6} color={'red'}/>
                 <Cell size={10}/>
                 <Cell size={3}/>
@@ -103,8 +102,8 @@ export const Prettier = () => {
             <Row>
                 <Cell size={3}/>
                 <Cell size={5}/>
-                <Cell size={2} />
-                <Cell size={8} />
+                <Cell size={2}/>
+                <Cell size={8}/>
                 <Cell size={6} color={'green'}/>
                 <Cell size={6}/>
                 <Cell size={8}/>
@@ -113,7 +112,7 @@ export const Prettier = () => {
             </Row>
             <Row>
                 <Cell size={5}/>
-                <Cell size={8} />
+                <Cell size={8}/>
                 <Cell size={6} color={'yellow'}/>
                 <Cell size={4}/>
                 <Cell size={5}/>
@@ -121,8 +120,8 @@ export const Prettier = () => {
             </Row>
             <Row>
                 <Cell size={6}/>
-                <Cell size={2} />
-                <Cell size={8} />
+                <Cell size={2}/>
+                <Cell size={8}/>
                 <Cell size={6} color={'purple'}/>
                 <Cell size={6}/>
                 <Cell size={8}/>
@@ -137,6 +136,6 @@ export const Prettier = () => {
                 <Cell size={6}/>
             </Row>
         </P.PrettierContainer>
-    </F.Section>)
+    )
 
 }

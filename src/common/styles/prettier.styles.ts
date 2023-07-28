@@ -6,6 +6,7 @@ const size = 2;
 
 export const PrettierContainer = styled.div`
 
+    min-width:800px;
     padding:50px;
     display:flex;
     flex-direction:column;

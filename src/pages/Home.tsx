@@ -8,7 +8,7 @@ export const Home = () => {
         <>
             <F.Section id={'home'}>
                 <F.FirstBlock>
-                    <div style={{width: '60%', textAlign: 'center'}}>
+                    <div style={{width: '80%', textAlign: 'center'}}>
                         <Typography variant={'h2'}>{Text.getText(1)}</Typography>
                         <Prettier/>
                     </div>
