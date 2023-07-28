@@ -4,6 +4,8 @@ import { Colors, REM_TO_PX_RATIO } from './variables.styles';
 export const GlobalStyles = createGlobalStyle`
 :root {
     font-size: ${REM_TO_PX_RATIO}px;  
+    --xxx: #1DA1F1;
+
 }
 
 body{    
@@ -14,6 +16,9 @@ body{
 
 ul {
     margin:0;
+}
+h1 {
+    color: var(--xxx);
 }
 
 div{

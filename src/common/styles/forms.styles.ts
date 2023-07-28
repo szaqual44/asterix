@@ -24,11 +24,6 @@ export const MainContainer = styled.div`
 `;
 // background:url(/src/common/styles/bgPattern.jpg);
 export const Overlay = styled.div`
-  // position:absolute;
-  // top:0;
-  // left:0;
-  // width:100%;
-  // height:100%;
   background: ${Colors.bodyBGRBA};
 `;
 
