@@ -1,22 +1,22 @@
 import styled from 'styled-components';
-import { Colors } from './variables.styles';
+import {Colors} from './variables.styles';
 
 const headerHeight = '15rem';
 
 export const Anim = styled.div`
-  animation:slidein${(p)=>(`${p.dir}${p.id}`)} 2s forwards;
+  animation:slidein${(p) => (`${p.dir}${p.id}`)} 2s forwards;
   width:100%;
   height:100%;
 
-  @keyframes slidein${(p)=>(`${p.dir}${p.id}`)} {
+  @keyframes slidein${(p) => (`${p.dir}${p.id}`)} {
       0% {
         transform: translateX(200%);
        }
       100% {
-        ${(p)=>{
-          if (p.dir==='right') return "transform: translateX(0);"
-          }      
-       }
+        ${(p) => {
+    if (p.dir === 'right') return "transform: translateX(0);"
+}
+}
 `;
 
 export const MainContainer = styled.div`
@@ -37,13 +37,15 @@ export const HeaderContainer = styled.header`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   padding: 2rem 10rem;
-  border-bottom: 4px solid ${Colors.navLink};
+  // border-bottom: 4px solid ${Colors.navLink};
 `;
 
 interface SectionStyle {
-  direction?: string;
+    direction?: string;
+    height?: string;
+
 }
 
 export const Section = styled.div<SectionStyle>`
@@ -51,23 +53,31 @@ export const Section = styled.div<SectionStyle>`
   width: 100%;
   ${(props) => {
     if (props.dir === 'column')
-      return `
+        return `
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin:10rem 0;
                 padding:0 5rem;
             `;
     else return '';
-  }}
+}}
+  
+    ${(props) => {
+    if (props.height)
+        return `
+               height:${props.height}
+            `;
+    else return '';
+}}
 `;
 
-export const FirstBlock = styled.div`
-  width: 100%;
+export const SideBlock = styled.div`
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:${Colors.primaryBG};
 `;
 
 export const Block = styled.div`
@@ -75,7 +85,6 @@ export const Block = styled.div`
   width: 100%;
 `;
 export const CarouselContainer = styled.div`
-  margin: 12rem 0;
   padding: 5rem;
   background: ${Colors.white};
 `;
@@ -96,13 +105,27 @@ export const ElementContainer = styled.div`
   display: flex;
   align-items: center;
 `;
-export const Logo = styled.img`
-  height: 100%;
+export const LogoContainer = styled.div`
+    height:100%;
+      width: 100%;
+      padding:0;
+      margin:0;
+    display: flex;
 `;
-export const Img = styled.img`
+export const Img = styled.img<{objectFit?:string}>`
   width: 100%;
-  object-fit: cover;
+
+  ${(props) => {
+    if (props.objectFit)
+        return `
+              object-fit: ${props.objectFit};
+            `;
+    else return 'object-fit: cover;';
+}}
+    
 `;
+
+
 export const Svg = styled.img`
   object-fit: cover;
   height: 100px;
@@ -120,19 +143,32 @@ export const Bar = styled.div`
   height: 150px;
   background: ${Colors.separationBar1};
 `;
+
 export const ServicesBlock = styled.div`
   width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
+  padding-bottom:100px;
 `;
 
-export const FooterStyling = styled.div`
-  background-color: ${Colors.footerBG};
-  color: ${Colors.footerText};
+export const ConctactBlock = styled.div`
+ background-color: ${Colors.white};
+ width: 100%;
+`;
+
+export const ContactStyling = styled.div`
+  background-color: ${Colors.primaryBG};
+  color: ${Colors.black};
 `;
 
 export const AboutStyling = styled.div`
-  background-color: ${Colors.aboutBG};
+  background-color: ${Colors.primaryBG};
   color: ${Colors.aboutText};
+  padding:60px 0;
+`;
+export const ServicesStyling = styled.div`
+  background-color: ${Colors.primaryBG};
+  color: ${Colors.aboutText};
+  padding:60px 0;
 `;

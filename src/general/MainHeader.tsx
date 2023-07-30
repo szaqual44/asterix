@@ -2,7 +2,7 @@ import {HeaderContainer} from '../common/styles/forms.styles';
 import {NavLink} from '../common/styles/typography.style';
 import {Routes} from '../common/RoutesEnum';
 import {Colors} from '../common/styles/variables.styles';
-import * as F from '../common/styles/forms.styles';
+
 
 export const MainHeader = () => {
     const navLinks = [
@@ -39,9 +39,6 @@ export const MainHeader = () => {
     return (
         <>
             <HeaderContainer>
-                <a href={'#home'}>
-                    <F.Logo src={'/assets/logo.jpg'}/>
-                </a>
                 <ul>
                     {navLinks.map((link, i) => (
                         <NavLink

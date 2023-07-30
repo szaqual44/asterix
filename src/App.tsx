@@ -5,6 +5,7 @@ import { About } from './pages/About';
 import { CarouselComponent } from './general/Carousel';
 import { Services } from './pages/Services';
 import { Footer } from './pages/Footer';
+import * as F from "./common/styles/forms.styles";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <About />
           <CarouselComponent />
           <Services />
+          <F.Bar/>
           <Footer />
         </main>
       </Overlay>

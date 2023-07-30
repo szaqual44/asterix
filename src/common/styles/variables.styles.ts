@@ -4,7 +4,7 @@ export const Colors = {
   white: '#ffffff',
   black: '#000000',
 
-  navBG: '#000000',
+  navBG: '#D5E4CA',
   bodyBG: '#526D82',
   bodyBGRBA: 'rgba(255,255,255,0.8)',
 
@@ -13,6 +13,8 @@ export const Colors = {
 
   aboutBG: '#fcf1d9',
   aboutText:'#000000',
+
+  primaryBG:'#F0F7EE',
 
   separationBar1: `#1DA1F1`,
 

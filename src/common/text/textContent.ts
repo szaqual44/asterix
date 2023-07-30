@@ -2,7 +2,7 @@ export const content = new Map([
   [1, 'An innovative performance marketing agency'],
   [
     2,
-    'Jupiter ads is a comprehensive advertising agency that offers a complete range of services for both publishers and advertisers, specializing inuser acquisition and mobile monetization solutions\n',
+    'Innovia is a comprehensive advertising agency that offers a complete range of services for both publishers and advertisers, specializing in user acquisition and mobile monetization solutions\n',
   ],
   [
     3,

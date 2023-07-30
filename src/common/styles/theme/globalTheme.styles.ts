@@ -19,8 +19,7 @@ export const globalTheme = createTheme({
       lineHeight: '200%',
     },
     h3: {
-      fontSize: 30,
-      fontWeight: 'bold',
+      fontSize: 25,
       lineHeight: '200%',
     },
   },
