@@ -1,10 +1,13 @@
 export const REM_TO_PX_RATIO = 10;
 
+export const myEmail = 'krzysztof@innovia.com'
+
+
 export const Colors = {
   white: '#ffffff',
   black: '#000000',
 
-  navBG: '#D5E4CA',
+  navBG:  '#000000',
   bodyBG: '#526D82',
   bodyBGRBA: 'rgba(255,255,255,0.8)',
 
@@ -24,7 +27,7 @@ export const Colors = {
   headerText: '#27374D',
   text: '#27374D',
 
-  primary: '#142033',
+  primary: '#9966FF',
 
   lightGrey: '#f2f2f2',
   mediumGrey: '#555555',

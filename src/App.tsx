@@ -1,11 +1,9 @@
 import { MainHeader } from './general/MainHeader';
 import {  MainContainer, Overlay } from './common/styles/forms.styles';
 import { Home } from './pages/Home';
-import { About } from './pages/About';
 import { CarouselComponent } from './general/Carousel';
-import { Services } from './pages/Services';
 import { Footer } from './pages/Footer';
-import * as F from "./common/styles/forms.styles";
+import {LetsTalk} from "./pages/LetsTalk";
 
 function App() {
   return (
@@ -14,10 +12,11 @@ function App() {
         <MainHeader />
         <main>
           <Home />
-          <About />
+          <LetsTalk/>
+
           <CarouselComponent />
-          <Services />
-          <F.Bar/>
+          {/*<Services />*/}
+          {/*<F.Bar/>*/}
           <Footer />
         </main>
       </Overlay>

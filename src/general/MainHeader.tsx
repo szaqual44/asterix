@@ -29,7 +29,7 @@ export const MainHeader = () => {
     ];
 
     const navLinkClass = {
-        color: Colors.navLink,
+        color: Colors.white,
         '&:hover': {
             color: Colors.navLinkHoover,
             textDecoration: 'none',
@@ -46,7 +46,7 @@ export const MainHeader = () => {
                             key={i}
                             color={'inherit'}
                             underline={'hover'}
-                            variant={'h3'}
+                            variant={'h4'}
                             sx={navLinkClass}
                         >
                             {link.title}

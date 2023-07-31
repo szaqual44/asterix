@@ -41,7 +41,7 @@ export const Services = () => {
                         {puzzle.map((p) => (
                             <Grid item md={6} sm={12} key={p.icon}>
                                 <F.ElementContainer>
-                                    <F.Svg src={p.icon}/>
+                                    <F.Svg  src={p.icon}/>
                                     <F.PuzzelContainer>
                                         <Typography variant={'h2'}>{p.title}</Typography>
                                         <Typography sx={{my: 2}} variant={'h3'}>

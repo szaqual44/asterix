@@ -20,6 +20,9 @@ ul {
 h1 {
     color: var(--xxx);
 }
+a {
+ text-decoration: none;
+}
 
 div{
     box-sizing:border-box;
