@@ -36,8 +36,11 @@ export const Footer = () => {
                             <Typography sx={{my: 1, color: textColor}} variant={'h5'}>
                                 Białowieska 99
                             </Typography>
+                            <Typography sx={{mb:1, color: textColor}} variant={'h5'}>
+                                55-234 Wroclaw
+                            </Typography>
                             <Typography sx={{mb: 10, color: textColor}} variant={'h5'}>
-                                Poland, 55-234 Wroclaw
+                                Poland
                             </Typography>
                         </Grid>
                         <Grid item xs={4}>
