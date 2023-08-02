@@ -1,54 +1,70 @@
 import {Grid, Typography} from '@mui/material';
 import * as F from '../common/styles/forms.styles';
+import {Colors} from "../common/styles/variables.styles";
 
 //https://icons8.com/
 
 export const Services = () => {
     const puzzle = [
         {
-            title: 'Global',
-            text: 'Reach users in 85+ countries on all continents',
-            icon: '/services/global.png',
+            title: 'Precise targeting',
+            text: 'A cutting-edge technology that empowers us to finely target our ads, ensuring the perfect match between ad content and user interests, presented at the optimal moment',
+            icon: '/puzzle/target.png',
         },
         {
-            title: 'KPI-focused',
-            text: 'Pay only for the achieved action, install or other performance',
-            icon: '/services/house.png',
+            title: 'Premium inventory',
+            text: 'You\'ll have complete oversight and transparency throughout the campaign execution, allowing us' +
+                ' to meet and surpass your expectations by consistently delivering high-quality traffic, guided by KPIs',
+            icon: '/puzzle/medal.png',
         },
         {
-            title: 'Mobile',
-            text: 'We specialize on mobile apps promotion',
-            icon: '/services/mobile.png',
+            title: 'Fraud prevention',
+            text: 'Our platform is fortified with automated fraud prevention mechanisms, guaranteeing the integrity and security of your campaigns',
+            icon: '/puzzle/shield.png',
         },
         {
-            title: 'Risk-safe',
-            text: 'Our qualified and tech-savvy team acquire high quality traffic and prevent fraud',
-            icon: '/services/mail.png',
+            title: 'Performance and growth',
+            text: 'We work hand in hand with you to craft strategic growth plans that transcend fleeting trends, emphasizing steady and sustainable progress for your business',
+            icon: '/puzzle/chart.png',
+        },
+        {
+            title: 'Long-term relationships',
+            text: 'At Innovia, we believe in the magic of long-term relationships. We don\'t just focus on short-term gains; we are committed to nurturing partnerships that stand the test of time.',
+            icon: '/puzzle/handshake.png',
+        },
+        {
+            title: 'Dedicated team',
+            text: 'Your success is our success! Each partner is assigned a skilled and attentive senior UA strategy manager, ensuring you receive personalized support and campaign advising that is second to none',
+            icon: '/puzzle/monitor.png',
         },
     ];
+
+
+
+    // #DBCDF0
+    // #F2C6DE
+    // #F7D9C4
 
     return (
         <>
             <F.ServicesStyling>
                 <F.Section dir={'column'} id={'services'}>
                     <F.ServicesBlock>
-
-                            <Typography variant={'h1'}>Services</Typography>
-
+                        <Typography  sx={{pl: 7, mt: 10, color: Colors.white}} variant={'h1'}>Services</Typography>
                     </F.ServicesBlock>
 
-                    <Grid container spacing={5}>
+                    <Grid container spacing={0}>
                         {puzzle.map((p) => (
-                            <Grid item md={6} sm={12} key={p.icon}>
-                                <F.ElementContainer>
-                                    <F.Svg  src={p.icon}/>
-                                    <F.PuzzelContainer>
-                                        <Typography variant={'h2'}>{p.title}</Typography>
-                                        <Typography sx={{my: 2}} variant={'h3'}>
+                            <Grid item md={4} key={p.icon}>
+                                <F.ServiceElementContainer>
+                                    <F.Svg   src={p.icon}/>
+                                    <F.ServicePuzzelContainer>
+                                        <Typography sx={{ color: Colors.white}} variant={'h4'}>{p.title}</Typography>
+                                        <Typography sx={{my: 2, textAlign:'center'}} variant={'h5'}>
                                             {p.text}
                                         </Typography>
-                                    </F.PuzzelContainer>
-                                </F.ElementContainer>
+                                    </F.ServicePuzzelContainer>
+                                </F.ServiceElementContainer>
                             </Grid>
                         ))}
                     </Grid>

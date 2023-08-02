@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { CarouselComponent } from './general/Carousel';
 import { Footer } from './pages/Footer';
 import {LetsTalk} from "./pages/LetsTalk";
+import {Services} from "./pages/Services";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <LetsTalk/>
 
           <CarouselComponent />
-          {/*<Services />*/}
+          <Services />
           {/*<F.Bar/>*/}
           <Footer />
         </main>

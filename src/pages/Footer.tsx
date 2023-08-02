@@ -7,16 +7,10 @@ export const Footer = () => {
     const textColor = Colors.white
     return (
         <>
-            <F.ContactStyling id={'contact'}>
-                <F.ServicesBlock>
-                    <Typography sx={{pl: 7, mt: 10, color: Colors.black}} variant={'h1'}>
-                        Contact us
-                    </Typography>
-                </F.ServicesBlock>
-            </F.ContactStyling>
-            <F.ConctactBlock>
-                <F.CenterBlock>
-                    <Typography variant={'h1'} sx={{color: Colors.white, fontSize: 100, pt: 3, mb: 25}}>LET’S KEEP IN
+
+            <F.ConctactBlock id={'contact'}>
+                <F.CenterBlock kolor>
+                    <Typography variant={'h1'} sx={{color: Colors.white, fontSize: 100, p: 3}}>LET’S KEEP IN
                         TOUCH!
                     </Typography>
                 </F.CenterBlock>
