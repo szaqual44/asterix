@@ -1,29 +1,8 @@
 import styled from 'styled-components';
-import {Colors} from './variables.styles';
-
-
-// export const Anim = styled.div`
-//   animation:slidein${(p) => (`${p.dir}${p.id}`)} 2s forwards;
-//   width:100%;
-//   height:100%;
-//
-//   @keyframes slidein${(p) => (`${p.dir}${p.id}`)} {
-//       0% {
-//         transform: translateX(200%);
-//        }
-//       100% {
-//         ${(p) => {
-//     if (p.dir === 'right') return "transform: translateX(0);"
-// }
-// }
-// `;
+import { Colors } from './variables.styles';
 
 export const MainContainer = styled.div`
   height: 100vh;
-`;
-
-export const Overlay = styled.div`
-  background: ${Colors.bodyBGRBA};
 `;
 
 export const HeaderContainer = styled.header`
@@ -39,53 +18,46 @@ export const HeaderContainer = styled.header`
   padding: 2rem 10rem;
 `;
 
-interface SectionStyle {
-    direction?: string;
-    height?: string;
-}
-
-export const Section = styled.div<SectionStyle>`
+export const Section = styled.div<{ direction?: string; height?: string }>`
   display: flex;
   width: 100%;
   ${(props) => {
     if (props.dir === 'column')
-        return `
+      return `
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                // padding:0 5rem;
             `;
     else return '';
-}}
-  
-    ${(props) => {
+  }}
+
+  ${(props) => {
     if (props.height)
-        return `
+      return `
                height:${props.height}
             `;
     else return '';
-}}
+  }}
 `;
 
-export const CenterBlock = styled.div<{kolor?:boolean}>`
+export const CenterBlock = styled.div<{ kolor?: boolean }>`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom:15rem;
-  
-    ${(props) => {
+  margin-bottom: 15rem;
+
+  ${(props) => {
     if (props.kolor)
-        return `
+      return `
                 background: rgb(249,112,255);
                 background: linear-gradient(90deg, rgba(249,112,255,1) 19%, rgba(86,196,254,0.9809173669467787) 80%);
             `;
     else return '';
-}}
-   
+  }}
 `;
 
 export const NameBlock = styled.div`
@@ -96,22 +68,21 @@ export const NameBlock = styled.div`
 `;
 
 export const LetsTalkHeader = styled.div`
-    display:flex;
-    justify-content:center;
-    padding:2rem;
-    width:100%;
-    background: rgb(249,112,255);
-    background: linear-gradient(90deg, rgba(249,112,255,1) 19%, rgba(86,196,254,0.9809173669467787) 80%);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+  background: rgb(249, 112, 255);
+  background: linear-gradient(90deg, rgba(249, 112, 255, 1) 19%, rgba(86, 196, 254, 0.9809173669467787) 80%);
 `;
 
-
 export const BackgroundGif = styled.div`
-    height: 100vh;
-    width: 100vw;
-    padding:0;
-    margin:0;   
-    background-size: cover;
-    background-image:url('/assets/bghome.gif');
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-image: url('/assets/bghome.gif');
 `;
 
 export const Block = styled.div`
@@ -134,8 +105,6 @@ export const TextContainer = styled.div`
 }    
 `;
 
-
-
 export const ElementContainer = styled.div`
   width: 100%;
   height: 120px;
@@ -143,84 +112,79 @@ export const ElementContainer = styled.div`
   align-items: center;
 `;
 export const LogoContainer = styled.div`
-    display: flex;
+  display: flex;
 `;
 export const Img = styled.img<{ objectFit?: string }>`
   width: 100%;
 
   ${(props) => {
     if (props.objectFit)
-        return `
+      return `
               object-fit: ${props.objectFit};
             `;
     else return 'object-fit: cover;';
-}}
-    
+  }}
 `;
 
-
-export const Svg = styled.img<{size?:string,color?:string}>`
+export const Svg = styled.img<{ size?: string; color?: string; logo?: boolean }>`
   object-fit: contain;
   height: 200px;
-  margin:6rem;
-  
-    ${(props) => {
+  margin: 6rem;
+
+  ${(props) => {
     if (props.color === 'white')
-        return `
+      return `
               filter: invert(98%) sepia(22%) saturate(90%) hue-rotate(316deg) brightness(116%) contrast(100%);
             `;
     if (props.color === 'primary')
-        return `
+      return `
                filter: invert(67%) sepia(67%) saturate(6993%) hue-rotate(234deg) brightness(104%) contrast(101%);
             `;
     else return '';
-}}
+  }}
 
-      ${(props) => {
+  ${(props) => {
     if (props.size === 'small')
-        return `
+      return `
               width:6rem;
               margin:3rem;
             `;
     else return '';
-}}
- 
+  }}
+       ${(props) => {
+    if (props.logo)
+      return `
+              width:11rem;
+              margin:0 2rem 0 0;
 
-  
+            `;
+    else return '';
+  }}
 `;
 
-export const ServiceElementContainer = styled.div<{color?:string}>`
+export const ServiceElementContainer = styled.div<{ color?: string }>`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  border-radius:5rem;
-  margin:5rem;
-
+  border-radius: 5rem;
+  margin: 5rem;
 `;
 
 export const ServicePuzzelContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   padding: 0 5rem;
-  // margin: 5rem 0;
-
 `;
 
 export const PuzzelContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   padding: 0 5rem;
   margin: 5rem 0;
-`;
-
-export const Bar = styled.div`
-  width: 100%;
-  height: 150px;
-  background: ${Colors.separationBar1};
 `;
 
 export const ServicesBlock = styled.div`
@@ -228,51 +192,47 @@ export const ServicesBlock = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
-  padding-bottom:100px;
+  padding-bottom: 100px;
 `;
 
 export const ConctactBlock = styled.div`
- background-image:url('/assets/bghome.gif');
- width: 100%;
-`;
-
-export const ContactStyling = styled.div`
-  background-color: ${Colors.primaryBG};
-  color: ${Colors.black};
+  background-image: url('/assets/bghome.gif');
+  width: 100%;
 `;
 
 export const AboutStyling = styled.div`
   background-color: ${Colors.primaryBG};
   color: ${Colors.aboutText};
-  padding:60px 0;
+  padding: 60px 0;
 `;
 export const ServicesStyling = styled.div`
- background-image:url('/assets/bghome.gif');
+  background-image: url('/assets/bghome.gif');
   color: ${Colors.white};
-  padding:60px 0;
+  padding: 60px 0;
 `;
 
-export const ContactDataContainer = styled.div<{justify?:string}>`
-    display:flex;
-    justify-content:center;
-    width:100%;
-    padding:0 20rem;
+export const ContactDataContainer = styled.div<{ justify?: string }>`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20rem;
 
-        ${(props) => {
+  ${(props) => {
     if (props.justify === 'start')
-        return `
+      return `
               justify-content:start;
+              align-items:center;
             `;
     else return '';
-}}
+  }}
 `;
 
 export const Rights = styled.div`
   width: 100%;
   height: 50px;
   background: ${Colors.black};
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
 `;

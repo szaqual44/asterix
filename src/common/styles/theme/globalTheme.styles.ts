@@ -1,9 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 import { Colors } from '../variables.styles';
 
-
-
-
 export const globalTheme = createTheme({
   typography: {
     // fontFamily: [`${fontName}`, 'sans-serif'].join(','),
@@ -19,7 +16,7 @@ export const globalTheme = createTheme({
     h3: {
       fontSize: 30,
       lineHeight: '200%',
-      letterSpacing:"0.5rem"
+      letterSpacing: '0.5rem',
     },
     h4: {
       fontSize: 30,
@@ -29,7 +26,7 @@ export const globalTheme = createTheme({
     h5: {
       fontSize: 20,
       lineHeight: '200%',
-      letterSpacing:"0.5rem"
+      letterSpacing: '0.5rem',
     },
   },
   components: {
