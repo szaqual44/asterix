@@ -41,6 +41,15 @@ export const Section = styled.div<{ direction?: string; height?: string }>`
   }}
 `;
 
+export const PolicySection = styled.section`
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+`
+
 export const CenterBlock = styled.div<{ kolor?: boolean }>`
   width: 100%;
   height: 100%;
@@ -236,3 +245,9 @@ export const Rights = styled.div`
   align-items: center;
   padding: 2rem;
 `;
+
+export const PolicyStyling = styled.section`
+  background: ${Colors.white};
+  padding:10rem;
+
+`

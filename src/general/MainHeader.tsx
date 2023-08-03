@@ -2,8 +2,13 @@ import { HeaderContainer } from '../common/styles/forms.styles';
 import { NavLink } from '../common/styles/typography.style';
 import { Routes } from '../common/RoutesEnum';
 import { Colors } from '../common/styles/variables.styles';
+import { useLocation } from 'react-router-dom';
 
 export const MainHeader = () => {
+
+  const location = useLocation()
+  const path=location.pathname
+
   const navLinks = [
     {
       title: 'Home',
@@ -41,7 +46,7 @@ export const MainHeader = () => {
         <ul>
           {navLinks.map((link, i) => (
             <NavLink
-              href={`#${link.id}`}
+              href={path.includes('/privacypolicy') ? `/`:`#${link.id}`}
               key={i}
               color={'inherit'}
               underline={'hover'}

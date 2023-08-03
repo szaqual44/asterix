@@ -28,6 +28,9 @@ export const globalTheme = createTheme({
       lineHeight: '200%',
       letterSpacing: '0.5rem',
     },
+    h6: {
+      fontSize: 20,
+    },
   },
   components: {
     MuiCssBaseline: {
