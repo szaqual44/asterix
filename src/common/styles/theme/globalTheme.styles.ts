@@ -6,7 +6,7 @@ export const globalTheme = createTheme({
     // fontFamily: [`${fontName}`, 'sans-serif'].join(','),
     fontFamily: [`Bahnschrift`, 'sans-serif'].join(','),
     h1: {
-      fontSize: 120,
+      fontSize: 100,
       color: Colors.headerText,
     },
     h2: {
@@ -15,13 +15,17 @@ export const globalTheme = createTheme({
       lineHeight: '200%',
     },
     h3: {
-      fontSize: 30,
+      fontSize: 25,
       lineHeight: '200%',
-      letterSpacing: '0.5rem',
+
     },
     h4: {
-      fontSize: 30,
-      lineHeight: '200%',
+      fontSize: 20,
+      lineHeight: '150%',
+      color: Colors.white,
+      textAlign: 'center',
+      fontWeight: 'bold',
+      letterSpacing: '0.2rem',
 
     },
     h5: {
@@ -32,6 +36,9 @@ export const globalTheme = createTheme({
     h6: {
       fontSize: 20,
     },
+    // h7: {
+    //   fontSize: 18,
+    // },
   },
   components: {
     MuiCssBaseline: {

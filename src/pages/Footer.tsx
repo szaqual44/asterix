@@ -56,14 +56,6 @@ export const Footer = () => {
 
                         <Grid item xs={4}>
                             <F.ElementContainer>
-                                <F.Svg size={'small'} color={'white'} src={'/services/mobile.png'}/>
-                                <F.PuzzelContainer>
-                                    <Typography variant={'h5'} sx={{color: 'white', fontWeight: 'bold'}}>
-                                        +48 576 317 374
-                                    </Typography>
-                                </F.PuzzelContainer>
-                            </F.ElementContainer>
-                            <F.ElementContainer>
                                 <a href={`mailto:${myEmail}`}>
                                     <F.Svg size={'small'} color={'white'} src={'/services/mail.png'}/>
                                 </a>
@@ -79,6 +71,15 @@ export const Footer = () => {
                                             {myEmail}
                                         </Typography>
                                     </a>
+                                </F.PuzzelContainer>
+                            </F.ElementContainer>
+                            {/*letter spacing 0.2*/}
+                            <F.ElementContainer>
+                                <F.Svg size={'small'} color={'white'} src={'/services/mobile.png'}/>
+                                <F.PuzzelContainer>
+                                    <Typography variant={'h5'} sx={{color: 'white', fontWeight: 'bold'}}>
+                                        +48 576 317 374
+                                    </Typography>
                                 </F.PuzzelContainer>
                             </F.ElementContainer>
                         </Grid>

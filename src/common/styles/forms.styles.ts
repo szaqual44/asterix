@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { Colors } from './variables.styles';
 
+export const Container = styled.div`
+  width: 80%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+border:2px solid red;
+`;
+
 export const HeaderContainer = styled.header`
   position: sticky;
   left: 0;
@@ -11,7 +19,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 2rem 10rem;
+  padding: 0 10rem;
 `;
 
 export const Section = styled.div<{ direction?: string; height?: string }>`
@@ -131,7 +139,7 @@ export const Img = styled.img<{ objectFit?: string }>`
 
 export const Svg = styled.img<{ size?: string; color?: string; logo?: boolean }>`
   object-fit: contain;
-  height: 200px;
+  height: 150px;
   margin: 6rem;
 
   ${(props) => {
@@ -159,7 +167,7 @@ export const Svg = styled.img<{ size?: string; color?: string; logo?: boolean }>
       return `
               width:11rem;
               margin:0 2rem 0 0;
-
+  height: 200px;
             `;
     else return '';
   }}
@@ -211,7 +219,9 @@ export const AboutStyling = styled.div`
 export const ServicesStyling = styled.div`
   background-image: url('/assets/bghome.gif');
   color: ${Colors.white};
-  padding: 60px 0;
+
+ display: flex;
+  justify-content: center;
 `;
 
 export const ContactDataContainer = styled.div<{ justify?: string }>`

@@ -1,7 +1,7 @@
 export const REM_TO_PX_RATIO = 10;
 
 export const myEmail = 'krzysztof@innovia.click';
-export const bannerFontSize=100;
+export const bannerFontSize=90;
 export const logoFontSize=150;
 
 export const Colors = {
