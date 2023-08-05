@@ -1,6 +1,6 @@
 export const REM_TO_PX_RATIO = 10;
 
-export const myEmail = 'krzysztof@innovia.com';
+export const myEmail = 'krzysztof@innovia.click';
 
 export const Colors = {
   white: '#ffffff',

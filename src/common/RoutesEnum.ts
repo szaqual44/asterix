@@ -3,4 +3,5 @@ export enum Routes {
   CONTACT = 'contact',
   WHYUS = 'why-us',
   HOME = '/',
+  PRIVACY_POLICY='/privacypolicy'
 }

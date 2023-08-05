@@ -1,15 +1,16 @@
 import {Grid, Typography} from '@mui/material';
 import * as F from '../common/styles/forms.styles';
 import {Colors, myEmail} from '../common/styles/variables.styles';
-import {NavLink} from "react-router-dom";
+
 
 export const Footer = () => {
+    const linkedinUrl = 'https://www.linkedin.com/company/97913362/admin/feed/posts/?feedType=following'
     const textColor = Colors.white;
     return (
         <>
             <F.ConctactBlock id={'contact'}>
                 <F.CenterBlock kolor>
-                    <Typography variant={'h1'} sx={{color: Colors.white, fontSize: 100, p: 3}}>
+                    <Typography variant={'h1'} sx={{color: Colors.white, fontSize: 100, p: 3,fontWeight:'bold'}}>
                         LET’S KEEP IN TOUCH!
                     </Typography>
                 </F.CenterBlock>
@@ -28,7 +29,7 @@ export const Footer = () => {
 
                 <F.ContactDataContainer>
                     <Grid container>
-                        <Grid item xs={5}>
+                        <Grid item xs={6}>
                             <Typography sx={{my: 1, color: textColor}} variant={'h5'}>
                                 Białowieska 99
                             </Typography>
@@ -38,12 +39,21 @@ export const Footer = () => {
                             <Typography sx={{mb: 10, color: textColor}} variant={'h5'}>
                                 Poland
                             </Typography>
-                            <NavLink to={'/privacypolicy'}>
-                                <Typography variant={'h5'} sx={{color: 'white', fontWeight: 'bold'}}>
-                                    PRIVACY POLICY
-                                </Typography>
-                            </NavLink>
                         </Grid>
+
+                        <Grid item xs={1} sx={{mr:4}}>
+                            <F.ElementContainer>
+                                <a href={linkedinUrl} target='_blank'>
+                                    <F.Svg size={'small'} color={'white'} src={'/services/linked.png'}/>
+                                </a>
+                            </F.ElementContainer>
+                            <F.ElementContainer>
+                                <a href='skype:example123?chat'>
+                                    <F.Svg size={'small'} color={'white'} src={'/services/skype.png'}/>
+                                </a>
+                            </F.ElementContainer>
+                        </Grid>
+
                         <Grid item xs={4}>
                             <F.ElementContainer>
                                 <F.Svg size={'small'} color={'white'} src={'/services/mobile.png'}/>
@@ -70,19 +80,6 @@ export const Footer = () => {
                                         </Typography>
                                     </a>
                                 </F.PuzzelContainer>
-                            </F.ElementContainer>
-                        </Grid>
-
-                        <Grid item xs={3}>
-                            <F.ElementContainer>
-                                <a href='https://www.linkedin.com/in/krzysztof-zawislak-1a1853138/' target='_blank'>
-                                    <F.Svg size={'small'} color={'white'} src={'/services/linked.png'}/>
-                                </a>
-                            </F.ElementContainer>
-                            <F.ElementContainer>
-                                <a href='skype:example123?chat'>
-                                    <F.Svg size={'small'} color={'white'} src={'/services/skype.png'}/>
-                                </a>
                             </F.ElementContainer>
                         </Grid>
                     </Grid>

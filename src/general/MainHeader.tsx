@@ -1,63 +1,76 @@
-import { HeaderContainer } from '../common/styles/forms.styles';
-import { NavLink } from '../common/styles/typography.style';
-import { Routes } from '../common/RoutesEnum';
-import { Colors } from '../common/styles/variables.styles';
-import { useLocation } from 'react-router-dom';
+import {HeaderContainer} from '../common/styles/forms.styles';
+import {NavLink} from '../common/styles/typography.style';
+import {Routes} from '../common/RoutesEnum';
+import {Colors} from '../common/styles/variables.styles';
+import {useLocation} from 'react-router-dom';
 
 export const MainHeader = () => {
 
-  const location = useLocation()
-  const path=location.pathname
+    const location = useLocation()
+    const pathname = location.pathname
 
-  const navLinks = [
-    {
-      title: 'Home',
-      path: '/',
-      id: 'home',
-    },
-    {
-      title: 'About',
-      path: '/',
-      id: 'about',
-    },
-    {
-      title: 'Services',
-      path: Routes.WHYUS,
-      id: 'services',
-    },
-    {
-      title: 'Contact',
-      path: Routes.CONTACT,
-      id: 'contact',
-    },
-  ];
+    const navLinks = [
+        {
+            title: 'Home',
+            path: '/',
+            id: 'home',
+        },
+        {
+            title: 'About',
+            path: '/',
+            id: 'about',
+        },
+        {
+            title: 'Services',
+            path: Routes.WHYUS,
+            id: 'services',
+        },
+        {
+            title: 'Contact',
+            path: Routes.CONTACT,
+            id: 'contact',
+        },
+        {
+            title: 'Privacy Policy',
+            path: Routes.PRIVACY_POLICY,
+            id: 'policy',
+        },
+    ];
 
-  const navLinkClass = {
-    color: Colors.white,
-    '&:hover': {
-      color: Colors.navLinkHoover,
-      textDecoration: 'none',
-    },
-  };
+    const navLinkClass = {
+        color: Colors.white,
+        '&:hover': {
+            color: Colors.navLinkHoover,
+            textDecoration: 'none',
+        },
+    };
 
-  return (
-    <>
-      <HeaderContainer>
-        <ul>
-          {navLinks.map((link, i) => (
-            <NavLink
-              href={path.includes('/privacypolicy') ? `/`:`#${link.id}`}
-              key={i}
-              color={'inherit'}
-              underline={'hover'}
-              variant={'h4'}
-              sx={navLinkClass}
-            >
-              {link.title}
-            </NavLink>
-          ))}
-        </ul>
-      </HeaderContainer>
-    </>
-  );
+
+    const getPath = (id: string, navLinksPath: Routes | string) => {
+        if (pathname.includes('/privacypolicy')) return `/`
+        else if (navLinksPath === Routes.PRIVACY_POLICY) return `http://localhost:5173${Routes.PRIVACY_POLICY}`
+        else return `#${id}`
+
+    }
+
+    return (
+        <>
+            <HeaderContainer>
+                <ul>
+                    {navLinks.map((link, i) => (
+                        <NavLink
+                            href={getPath(link.id, link.path)}
+                            key={i}
+                            color={'inherit'}
+                            underline={'hover'}
+                            variant={'h4'}
+                            sx={navLinkClass}
+                        >
+                            {link.title}
+                        </NavLink>
+                    ))}
+                </ul>
+            </HeaderContainer>
+        </>
+    );
 };

@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import { Colors } from './variables.styles';
 
-export const MainContainer = styled.div`
-  height: 100vh;
-`;
-
 export const HeaderContainer = styled.header`
   position: sticky;
   left: 0;
@@ -57,7 +53,7 @@ export const CenterBlock = styled.div<{ kolor?: boolean }>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15rem;
+  // margin-bottom: 15rem;
 
   ${(props) => {
     if (props.kolor)
@@ -85,13 +81,19 @@ export const LetsTalkHeader = styled.div`
   background: linear-gradient(90deg, rgba(249, 112, 255, 1) 19%, rgba(86, 196, 254, 0.9809173669467787) 80%);
 `;
 
-export const BackgroundGif = styled.div`
-  height: 100vh;
+export const BackgroundHome = styled.div`
   width: 100vw;
-  padding: 0;
-  margin: 0;
-  background-size: cover;
-  background-image: url('/assets/bghome.gif');
+  background: ${Colors.black};
+  margin-top:-200px;
+`;
+
+export const BackgroundImageHome = styled.div`
+  background-size: contain;
+  width: 100%;
+  height:140vh;
+  background-repeat: no-repeat;
+  background-position-x: center;  
+  background-image: url('/assets/colors.png');
 `;
 
 export const Block = styled.div`

@@ -11,14 +11,14 @@ export const CarouselComponent = () => {
   };
 
   const imgPath = `/assets/carousel/`;
-  const imgList = [1, 2, 3, 4, 5, 6];
+  const imgList = [1, 2, 3, 4];
   return (
     <>
       <F.CarouselContainer>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {imgList.map((img) => (
             <Carousel.Item key={img} interval={1000}>
-              <I.CarouselSingleImage src={`${imgPath}${img}.jpg`} alt={'img'} />
+              <I.CarouselSingleImage src={`${imgPath}${img}.png`} alt={'img'} />
             </Carousel.Item>
           ))}
         </Carousel>

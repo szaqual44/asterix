@@ -56,7 +56,7 @@ export const Services = () => {
                 <F.ServiceElementContainer>
                   <F.Svg src={p.icon} />
                   <F.ServicePuzzelContainer>
-                    <Typography sx={{ color: Colors.white }} variant={'h4'}>
+                    <Typography sx={{ color: Colors.white, textAlign: 'center' }} variant={'h4'}>
                       {p.title}
                     </Typography>
                     <Typography sx={{ my: 2, textAlign: 'center' }} variant={'h5'}>
