@@ -58,6 +58,7 @@ export const CenterBlock = styled.div<{ kolor?: boolean }>`
   ${(props) => {
     if (props.kolor)
       return `
+                padding:2rem 0 0.5rem 0;
                 background: rgb(249,112,255);
                 background: linear-gradient(90deg, rgba(249,112,255,1) 19%, rgba(86,196,254,0.9809173669467787) 80%);
             `;
@@ -70,15 +71,6 @@ export const NameBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-export const LetsTalkHeader = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  width: 100%;
-  background: rgb(249, 112, 255);
-  background: linear-gradient(90deg, rgba(249, 112, 255, 1) 19%, rgba(86, 196, 254, 0.9809173669467787) 80%);
 `;
 
 export const BackgroundHome = styled.div`

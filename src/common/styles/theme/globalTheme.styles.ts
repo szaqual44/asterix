@@ -4,8 +4,9 @@ import { Colors } from '../variables.styles';
 export const globalTheme = createTheme({
   typography: {
     // fontFamily: [`${fontName}`, 'sans-serif'].join(','),
+    fontFamily: [`Bahnschrift`, 'sans-serif'].join(','),
     h1: {
-      fontSize: 150,
+      fontSize: 120,
       color: Colors.headerText,
     },
     h2: {
@@ -21,7 +22,7 @@ export const globalTheme = createTheme({
     h4: {
       fontSize: 30,
       lineHeight: '200%',
-      fontFamily: [`Bahnschrift`, 'sans-serif'].join(','),
+
     },
     h5: {
       fontSize: 20,

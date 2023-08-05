@@ -1,6 +1,6 @@
 import {Grid, Typography} from '@mui/material';
 import * as F from '../common/styles/forms.styles';
-import {Colors, myEmail} from '../common/styles/variables.styles';
+import {bannerFontSize, Colors, myEmail} from '../common/styles/variables.styles';
 
 
 export const Footer = () => {
@@ -10,7 +10,7 @@ export const Footer = () => {
         <>
             <F.ConctactBlock id={'contact'}>
                 <F.CenterBlock kolor>
-                    <Typography variant={'h1'} sx={{color: Colors.white, fontSize: 100, p: 3,fontWeight:'bold'}}>
+                    <Typography variant={'h1'} sx={{color: Colors.white, fontSize: bannerFontSize, p: 3,fontWeight:'bold'}}>
                         LET’S KEEP IN TOUCH!
                     </Typography>
                 </F.CenterBlock>

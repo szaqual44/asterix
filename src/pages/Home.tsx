@@ -1,6 +1,6 @@
 import * as F from '../common/styles/forms.styles';
 import {Typography} from '@mui/material';
-import {Colors} from '../common/styles/variables.styles';
+import {Colors, logoFontSize} from '../common/styles/variables.styles';
 
 export const Home = () => {
     return (
@@ -12,10 +12,10 @@ export const Home = () => {
                         <F.CenterBlock>
                             <F.NameBlock style={{background:'black'}}>
                                 <F.Svg logo src={'/assets/logo.png'}/>
-                                <Typography variant={'h1'} sx={{color: Colors.white}}>
+                                <Typography variant={'h1'} sx={{color: Colors.white, fontSize:logoFontSize}}>
                                     In
                                 </Typography>
-                                <Typography variant={'h1'} sx={{color: Colors.primary}}>
+                                <Typography variant={'h1'} sx={{color: Colors.primary, fontSize:logoFontSize}}>
                                     novia
                                 </Typography>
                             </F.NameBlock>
