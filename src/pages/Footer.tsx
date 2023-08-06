@@ -66,6 +66,7 @@ export const Footer = () => {
                                             sx={{
                                                 color: 'white',
                                                 fontWeight: 'bold',
+                                                letterSpacing:'0.3rem'
                                             }}
                                         >
                                             {myEmail}
@@ -77,7 +78,7 @@ export const Footer = () => {
                             <F.ElementContainer>
                                 <F.Svg size={'small'} color={'white'} src={'/services/mobile.png'}/>
                                 <F.PuzzelContainer>
-                                    <Typography variant={'h5'} sx={{color: 'white', fontWeight: 'bold'}}>
+                                    <Typography variant={'h5'} sx={{color: 'white', fontWeight: 'bold',letterSpacing:'0.3rem'}}>
                                         +48 576 317 374
                                     </Typography>
                                 </F.PuzzelContainer>

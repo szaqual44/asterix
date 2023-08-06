@@ -5,6 +5,9 @@ import {bannerFontSize, Colors} from '../common/styles/variables.styles';
 export const LetsTalk = () => {
     return (
         <>
+        <F.LetsTalkSection>
+
+
             <F.Section dir={'column'} id={'letstalk'}>
                 <F.CenterBlock kolor>
                     <Typography variant={'h1'}
@@ -12,10 +15,15 @@ export const LetsTalk = () => {
                         LET`S TALK MOBILE APPS!{' '}
                     </Typography>
                 </F.CenterBlock>
-                <F.Container>
-                    <F.Img objectFit={"none"} src={'/assets/img/2.png'}/>
+
+
+
+                <F.Container >
+                    <F.Img  src={'/assets/img/2.png'}/>
                 </F.Container>
+
             </F.Section>
+        </F.LetsTalkSection>
         </>
     );
 };

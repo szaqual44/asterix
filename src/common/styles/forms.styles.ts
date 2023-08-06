@@ -6,7 +6,6 @@ export const Container = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-border:2px solid red;
 `;
 
 export const HeaderContainer = styled.header`
@@ -45,6 +44,10 @@ export const Section = styled.div<{ direction?: string; height?: string }>`
   }}
 `;
 
+export const LetsTalkSection = styled.section`
+  background:#DFE5E5;
+
+`
 export const PolicySection = styled.section`
   display: flex;
   width: 100%;
@@ -61,7 +64,7 @@ export const CenterBlock = styled.div<{ kolor?: boolean }>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-bottom: 15rem;
+
 
   ${(props) => {
     if (props.kolor)
@@ -177,8 +180,6 @@ export const ServiceElementContainer = styled.div<{ color?: string }>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5rem;
-  margin: 5rem;
 `;
 
 export const ServicePuzzelContainer = styled.div`
