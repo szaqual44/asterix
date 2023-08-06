@@ -59,7 +59,7 @@ export const Services = () => {
                                             <Typography variant={'h4'}>
                                                 {p.title}
                                             </Typography>
-                                            <Typography sx={{my: 2, textAlign: 'center'}} variant={'h6'}>
+                                            <Typography sx={{my: 2, textAlign: 'center',fontWeight:'light'}} variant={'h6'}>
                                                 {p.text}
                                             </Typography>
                                         </F.ServicePuzzelContainer>

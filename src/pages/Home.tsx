@@ -25,7 +25,8 @@ export const Home = () => {
                                                 letterSpacing: '0.5rem',
                                                 pb: 4,
                                                 color: Colors.white,
-                                                fontFamily: [`Gabriola`, 'sans-serif'].join(',')
+                                                fontFamily: [`Gabriola`, 'sans-serif'].join(','),
+                                                fontWeight:'light'
                                             }}>
                                     An innovative performance marketing agency{' '}
                                 </Typography>

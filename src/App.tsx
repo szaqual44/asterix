@@ -7,9 +7,9 @@ import {Services} from './pages/Services';
 import {useEffect} from 'react';
 import {Routes as RoutesGroup, Route} from "react-router-dom";
 import {Policy} from "./pages/Policy";
+import {About} from "./pages/About";
 
 function App() {
-
 
 
     useEffect(() => {
@@ -22,14 +22,16 @@ function App() {
                 <RoutesGroup>
                     <Route path='/' element={
                         <>
-                        <Home/>
-                        <LetsTalk/>
-                        <CarouselComponent/>
-                        <Services/>
-                        <Footer/>
+
+                            <Home/>
+                            <About/>
+                            <LetsTalk/>
+                            <CarouselComponent/>
+                            <Services/>
+                            <Footer/>
                         </>}
                     />
-                    <Route path={"/privacypolicy"} element={<Policy/>} />
+                    <Route path={"/privacypolicy"} element={<Policy/>}/>
                 </RoutesGroup>
             </main>
         </>

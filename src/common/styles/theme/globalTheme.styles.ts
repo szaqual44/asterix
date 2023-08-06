@@ -36,9 +36,6 @@ export const globalTheme = createTheme({
     h6: {
       fontSize: 20,
     },
-    p: {
-      fontSize: 18,
-    },
   },
   components: {
     MuiCssBaseline: {

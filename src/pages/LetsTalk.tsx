@@ -19,7 +19,7 @@ export const LetsTalk = () => {
 
 
                 <F.Container >
-                    <F.Img  src={'/assets/img/2.png'}/>
+                    <F.Img  src={'/assets/2.png'}/>
                 </F.Container>
 
             </F.Section>

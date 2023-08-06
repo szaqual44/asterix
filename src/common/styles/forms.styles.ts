@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items:center;
 `;
 
+export const FooterContainer=styled.div`
+width: 80%;
+`
+
 export const HeaderContainer = styled.header`
   position: sticky;
   left: 0;
@@ -87,8 +91,16 @@ export const NameBlock = styled.div`
 export const BackgroundHome = styled.div`
   width: 100vw;
   background: ${Colors.black};
-  margin-top:-200px;
+  margin-top:-170px;
 `;
+
+export const MottoContainer = styled.div`
+display: flex;
+flex-direction:column;
+align-items:center;
+justify-content: center;
+height: 50%;
+`
 
 export const BackgroundImageHome = styled.div`
   background-size: contain;
@@ -160,8 +172,9 @@ export const Svg = styled.img<{ size?: string; color?: string; logo?: boolean }>
   ${(props) => {
     if (props.size === 'small')
       return `
-              width:6rem;
+              width:4rem;
               margin:3rem;
+       
             `;
     else return '';
   }}
@@ -195,8 +208,7 @@ export const PuzzelContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 5rem;
-  margin: 5rem 0;
+  text-wrap: nowrap;
 `;
 
 export const ServicesBlock = styled.div`
@@ -209,13 +221,16 @@ export const ServicesBlock = styled.div`
 
 export const ConctactBlock = styled.div`
   background-image: url('/assets/bghome.gif');
-  width: 100%;
+
 `;
 
 export const AboutStyling = styled.div`
-  background-color: ${Colors.primaryBG};
+  display: flex;
+  justify-content: center;
+  background-color: ${Colors.black};
   color: ${Colors.aboutText};
-  padding: 60px 0;
+  padding-top:100px;
+
 `;
 export const ServicesStyling = styled.div`
   background-image: url('/assets/bghome.gif');
