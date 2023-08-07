@@ -49,7 +49,7 @@ export const MainHeader = () => {
 
     const getPath = (id: string, navLinksPath: Routes | string) => {
         if (pathname.includes('/privacypolicy')) return `/`
-        else if (navLinksPath === Routes.PRIVACY_POLICY) return `https://www.innovia.click/${Routes.PRIVACY_POLICY}`
+        else if (navLinksPath.includes(Routes.PRIVACY_POLICY)) return `/${Routes.PRIVACY_POLICY}`
         else return `#${id}`
     }
 
