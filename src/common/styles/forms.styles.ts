@@ -235,9 +235,9 @@ export const AboutStyling = styled.div`
 export const ServicesStyling = styled.div`
   background-image: url('/assets/bghome.gif');
   color: ${Colors.white};
-
- display: flex;
+  display: flex;
   justify-content: center;
+  margin-bottom:5rem;
 `;
 
 export const ContactDataContainer = styled.div<{ justify?: string }>`

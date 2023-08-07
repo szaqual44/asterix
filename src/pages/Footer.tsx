@@ -12,7 +12,7 @@ export const Footer = () => {
         <>
             <F.ConctactBlock id={'contact'}>
                 <F.CenterBlock kolor>
-                    <Typography variant={'h1'}
+                    <Typography variant={'h2'}
                                 sx={{color: Colors.white, fontSize: bannerFontSize, fontWeight: 'bold'}}>
                         LET’S KEEP IN TOUCH!
                     </Typography>
@@ -21,10 +21,10 @@ export const Footer = () => {
                     <F.ContactDataContainer justify={'start'}>
                         <F.Svg logo src={'/assets/logo.png'}/>
                         <F.LogoContainer>
-                            <Typography variant={'h1'} sx={{color: Colors.white}}>
+                            <Typography variant={'h2'} sx={{color: Colors.white}}>
                                 In
                             </Typography>
-                            <Typography variant={'h1'} sx={{color: Colors.primary}}>
+                            <Typography variant={'h2'} sx={{color: Colors.primary}}>
                                 novia
                             </Typography>
                         </F.LogoContainer>

@@ -10,7 +10,7 @@ export const LetsTalk = () => {
 
             <F.Section dir={'column'} id={'letstalk'}>
                 <F.CenterBlock kolor>
-                    <Typography variant={'h1'}
+                    <Typography variant={'h2'}
                                 sx={{color: Colors.white, fontSize: bannerFontSize, fontWeight: 'bold'}}>
                         LET`S TALK MOBILE APPS!
                     </Typography>

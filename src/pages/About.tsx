@@ -10,10 +10,10 @@ export const About = () => {
             <F.Container >
                 <Grid container spacing={0}>
                     <Grid sx={{p: 0}} item md={6}>
-                        <Typography sx={{color: Colors.white}} variant={'h1'}>
+                        <Typography variant={'h1'} sx={{color: Colors.white}} >
                             About
                         </Typography>
-                        <Typography sx={{pt: 5, color: Colors.white, FontWeight:'light', letterSpacing:'0.3rem'}} variant={'h6'}>
+                        <Typography sx={{pt: 15, color: Colors.white, FontWeight:'light', letterSpacing:'0.3rem'}} variant={'h6'}>
                             {Text.getText(4)}
                         </Typography>
                         <F.MottoContainer>
