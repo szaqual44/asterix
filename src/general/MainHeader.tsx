@@ -49,7 +49,7 @@ export const MainHeader = () => {
 
     const getPath = (id: string, navLinksPath: Routes | string) => {
         if (pathname.includes('/privacypolicy')) return `/`
-        else if (navLinksPath === Routes.PRIVACY_POLICY) return `http://localhost:5173${Routes.PRIVACY_POLICY}`
+        else if (navLinksPath === Routes.PRIVACY_POLICY) return `http://${Routes.PRIVACY_POLICY}`
         else return `#${id}`
 
     }
