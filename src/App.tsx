@@ -20,6 +20,7 @@ function App() {
             <MainHeader/>
             <main>
                 <RoutesGroup>
+                    <Route path={"/privacypolicy"} element={<Policy/>}/>
                     <Route path='/' element={
                         <>
 
@@ -31,7 +32,7 @@ function App() {
                             <Footer/>
                         </>}
                     />
-                    <Route path={"/privacypolicy"} element={<Policy/>}/>
+
                 </RoutesGroup>
             </main>
         </>
