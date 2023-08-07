@@ -91,7 +91,8 @@ export const NameBlock = styled.div`
 export const BackgroundHome = styled.div`
   width: 100vw;
   background: ${Colors.black};
-  margin-top:-60px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const MottoContainer = styled.div`
@@ -104,8 +105,8 @@ height: 50%;
 
 export const BackgroundImageHome = styled.div`
   background-size: contain;
-  width: 100%;
-   height:100vh;
+  width: 80%;
+  height:100vh;
   background-repeat: no-repeat;
   background-position-x: center;  
   background-image: url('/assets/colors.png');
@@ -244,8 +245,6 @@ export const ContactDataContainer = styled.div<{ justify?: string }>`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 0 20rem;
-
   ${(props) => {
     if (props.justify === 'start')
       return `
