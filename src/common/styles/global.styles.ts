@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body{    
     box-sizing:border-box;
-    background-color:${Colors.bodyBG};
+    background-color:${Colors.black};
     margin:0;
 }
 

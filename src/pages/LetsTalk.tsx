@@ -12,7 +12,7 @@ export const LetsTalk = () => {
                 <F.CenterBlock kolor>
                     <Typography variant={'h1'}
                                 sx={{color: Colors.white, fontSize: bannerFontSize, fontWeight: 'bold'}}>
-                        LET`S TALK MOBILE APPS!{' '}
+                        LET`S TALK MOBILE APPS!
                     </Typography>
                 </F.CenterBlock>
 

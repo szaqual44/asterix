@@ -91,7 +91,7 @@ export const NameBlock = styled.div`
 export const BackgroundHome = styled.div`
   width: 100vw;
   background: ${Colors.black};
-  margin-top:-170px;
+  margin-top:-60px;
 `;
 
 export const MottoContainer = styled.div`
@@ -105,7 +105,7 @@ height: 50%;
 export const BackgroundImageHome = styled.div`
   background-size: contain;
   width: 100%;
-  height:140vh;
+   height:100vh;
   background-repeat: no-repeat;
   background-position-x: center;  
   background-image: url('/assets/colors.png');

@@ -13,7 +13,7 @@ export const Footer = () => {
             <F.ConctactBlock id={'contact'}>
                 <F.CenterBlock kolor>
                     <Typography variant={'h1'}
-                                sx={{color: Colors.white, fontSize: bannerFontSize, p: 3, fontWeight: 'bold'}}>
+                                sx={{color: Colors.white, fontSize: bannerFontSize, fontWeight: 'bold'}}>
                         LET’S KEEP IN TOUCH!
                     </Typography>
                 </F.CenterBlock>
