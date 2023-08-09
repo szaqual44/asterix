@@ -173,7 +173,7 @@ export const Svg = styled.img<{ size?: string; color?: string; logo?: boolean }>
   ${(props) => {
     if (props.size === 'small')
       return `
-              width:4rem;
+              width:5rem;
               margin:3rem;
        
             `;
@@ -231,6 +231,7 @@ export const AboutStyling = styled.div`
   background-color: ${Colors.black};
   color: ${Colors.aboutText};
   padding-top:100px;
+  padding-bottom:10rem;
 
 `;
 export const ServicesStyling = styled.div`

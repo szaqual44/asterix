@@ -7,6 +7,7 @@ export const Footer = () => {
     const linkedinUrl = 'https://www.linkedin.com/company/97913362/admin/feed/posts/?feedType=following'
     const textColor = Colors.white;
     const letterSpacing = "0.3rem";
+    const fontSize=24
     return (
         <>
             <F.ConctactBlock id={'contact'}>
@@ -32,14 +33,14 @@ export const Footer = () => {
 
                         <F.ContactDataContainer>
                             <Grid container>
-                                <Grid item xs={8}>
-                                    <Typography sx={{mt: 5, mb: 1, color: textColor}} variant={'h5'}>
-                                        Białowieska 99
+                                <Grid item xs={7}>
+                                    <Typography sx={{mt: 5, mb: 1, color: textColor,letterSpacing,fontSize}} variant={'h5'}>
+                                        Bialowieska 99
                                     </Typography>
-                                    <Typography sx={{mb: 1, color: textColor}} variant={'h5'}>
-                                        55-234 Wroclaw
+                                    <Typography sx={{mb: 1, color: textColor,letterSpacing,fontSize}} variant={'h5'}>
+                                        54-234 Wroclaw
                                     </Typography>
-                                    <Typography sx={{mb: 10, color: textColor}} variant={'h5'}>
+                                    <Typography sx={{mb: 10, color: textColor,letterSpacing,fontSize}} variant={'h5'}>
                                         Poland
                                     </Typography>
                                 </Grid>
@@ -68,7 +69,7 @@ export const Footer = () => {
                                                     variant={'h5'}
                                                     sx={{
                                                         color: textColor,
-                                                        letterSpacing: letterSpacing
+                                                        letterSpacing,fontSize
                                                     }}
                                                 >
                                                     {myEmail}
@@ -80,7 +81,7 @@ export const Footer = () => {
                                         <F.Svg size={'small'} color={'white'} src={'/services/mobile.png'}/>
                                         <F.PuzzelContainer>
                                             <Typography variant={'h5'}
-                                                        sx={{color: textColor, letterSpacing: letterSpacing}}>
+                                                        sx={{color: textColor, letterSpacing,fontSize}}>
                                                 +48 576 317 374
                                             </Typography>
                                         </F.PuzzelContainer>

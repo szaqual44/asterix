@@ -30,7 +30,7 @@ export const Services = () => {
         },
         {
             title: 'Long-term relationships',
-            text: "At Innovia, we believe in the magic of long-term relationships. We don't just focus on short-term gains; we are committed to nurturing partnerships that stand the test of time.",
+            text: "At Innovia, we believe in the magic of long-term relationships. We don't just focus on short-term gains; we are committed to nurturing partnerships that stand the test of time",
             icon: '/puzzle/handshake.png',
         },
         {
