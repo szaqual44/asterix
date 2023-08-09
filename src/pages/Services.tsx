@@ -43,7 +43,7 @@ export const Services = () => {
     return (
         <>
             <F.ServicesStyling>
-                <F.Container>
+                <F.Container backgroundImageUrl={'/assets/bghome.gif'}>
                     <F.Section dir={'column'} id={'services'}>
                         <F.ServicesBlock>
                             <Typography sx={{mt: 10, color: Colors.white}} variant={'h1'}>

@@ -1,15 +1,31 @@
 import styled from 'styled-components';
 import { Colors } from './variables.styles';
 
-export const Container = styled.div`
+export const Container = styled.div<{backgroundImageUrl?:string}>`
   width: 80%;
   display:flex;
   justify-content:center;
   align-items:center;
+  
+  
+   ${(props) => {
+  if (props.backgroundImageUrl)
+    return `
+              background-image: url("${props.backgroundImageUrl}");
+            `;
+  else return '';
+}}
 `;
 
-export const FooterContainer=styled.div`
+export const FooterContainer=styled.div<{backgroundImageUrl?:string}>`
 width: 80%;
+ ${(props) => {
+  if (props.backgroundImageUrl)
+    return `
+              background-image: url("${props.backgroundImageUrl}");
+            `;
+  else return '';
+}}
 `
 
 export const HeaderContainer = styled.header`
@@ -221,7 +237,7 @@ export const ServicesBlock = styled.div`
 `;
 
 export const ConctactBlock = styled.div`
-  background-image: url('/assets/bghome.gif');
+  // background-image: url('/assets/bghome.gif');
 
 `;
 
@@ -235,7 +251,7 @@ export const AboutStyling = styled.div`
 
 `;
 export const ServicesStyling = styled.div`
-  background-image: url('/assets/bghome.gif');
+  
   color: ${Colors.white};
   display: flex;
   justify-content: center;
